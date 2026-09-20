@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U.S.S.S. • Uniform Portal</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<a class="brand" href="#top"><span class="seal">★</span><span><small>UNITED STATES</small><b>U.S.S.S.</b><em>SECRET SERVICE</em></span></a>
+<nav><a href="#tenues">Tenues</a><a href="#grades">Grades</a><a href="#manuel">Manuel</a></nav>
+<div class="classified">● PORTAIL INTERNE</div>
+</header>
+
+<main id="top">
+<section class="hero">
+<div><p class="kicker">UNITED STATES SECRET SERVICE • NEW DAWN RP V2</p><h1>Protection.<br><span>Service.</span><br>Excellence.</h1>
+<p>Portail interne des uniformes U.S.S.S. Consultez la tenue correspondant au niveau DEFCON en vigueur.</p>
+<a class="button" href="#tenues">VOIR LES TENUES <b>→</b></a></div>
+<div class="seal-big"><div>U.S.</div><strong>SECRET<br>SERVICE</strong><small>PROTECTION • INTÉGRITÉ • DEVOIR</small></div>
+</section>
+
+<section class="bar"><span>⚠</span><div><b>TENUE RÉGLEMENTAIRE — OBLIGATOIRE</b><small>Chaque élément de la tenue DEFCON en vigueur doit être porté par chaque agent.</small></div><i></i></section>
+
+<section id="tenues" class="section">
+<div class="section-head"><div><p class="kicker">UNIFORM STANDARD</p><h2>Tenues DEFCON</h2></div><span>NEW DAWN RP V2</span></div>
+
+<div class="defcon-tabs">
+<button class="active" data-target="d4">DEFCON 4</button><button data-target="d3">DEFCON 3</button><button data-target="d21">DEFCON 2 & 1</button>
+</div>
+
+<div id="d4" class="uniform panel active">
+<div class="uniform-title"><span>01</span><div><h3>U.S.S.S. — TENUE DEFCON 4</h3><p>Configuration réglementaire</p></div><b>MANDATORY</b></div>
+<div class="items">
+<article><strong>31</strong><span>T-Shirt</span><small></small></article>
+<article><strong>29</strong><span>Torse</span><small>Texture 2</small></article>
+<article><strong>4</strong><span>Bras</span><small></small></article>
+<article><strong>25</strong><span>Pantalon</span><small>Texture 2</small></article>
+<article><strong>111</strong><span>Chaussures</span><small></small></article>
+<article><strong>115</strong><span>Accessoire</span><small>Texture 1</small></article>
+<article><strong>111</strong><span>Lunettes</span><small></small></article>
+<article><strong>271</strong><span>Masque</span><small></small></article>
+</div></div>
+
+<div id="d3" class="uniform panel">
+<div class="uniform-title"><span>02</span><div><h3>U.S.S.S. — TENUE DEFCON 3</h3><p>Configuration réglementaire</p></div><b>MANDATORY</b></div>
+<div class="items">
+<article><strong>122</strong><span>T-Shirt</span><small></small></article>
+<article><strong>322</strong><span>Torse</span><small></small></article>
+<article><strong>4</strong><span>Bras</span><small></small></article>
+<article><strong>25</strong><span>Pantalon</span><small>Texture 2</small></article>
+<article><strong>111</strong><span>Chaussures</span><small></small></article>
+<article><strong>115</strong><span>Accessoire</span><small></small></article>
+<article><strong>111</strong><span>Lunettes</span><small></small></article>
+<article><strong>271</strong><span>Masque</span><small></small></article>
+</div></div>
+
+<div id="d21" class="uniform panel">
+<div class="uniform-title"><span>03</span><div><h3>U.S.S.S. — TENUE DEFCON 2 & 1</h3><p>Configuration renforcée</p></div><b>MANDATORY</b></div>
+<div class="items">
+<article><strong>253</strong><span>T-Shirt</span><small>Texture 2</small></article>
+<article><strong>844</strong><span>Torse</span><small></small></article>
+<article><strong>179</strong><span>Bras</span><small></small></article>
+<article><strong>358</strong><span>Pantalon</span><small>Texture 1</small></article>
+<article><strong>244</strong><span>Chaussures</span><small>Texture 2</small></article>
+<article><strong>290</strong><span>Accessoire</span><small></small></article>
+<article><strong>111</strong><span>Lunettes</span><small></small></article>
+<article><strong>169</strong><span>Masque</span><small></small></article>
+<article><strong>142</strong><span>Chapeau</span><small></small></article>
+</div></div>
+</section>
+
+<section id="grades" class="section alt"><div class="section-head"><div><p class="kicker">Hiérarchie</p><h2>Grades & fonctions</h2></div></div>
+<div class="grades"><div><span>01</span><b>DIRECTOR</b><small>Dirige l'USSS, répond au Gouverneur </small></div><div><span>02</span><b>SPECIAL AGENT IN CHARGE</b><small>Commande opérations et équipes </small></div><div><span>03</span><b>SENIOR SPECIAL AGENT</b><small>Chef d'équipe terrain </small></div><div><span>04</span><b>SPECIAL AGENT</b><small>Opérationnel</small></div></div></section>
+
+<section id="manuel" class="section manual"><div><p class="kicker">AGENT HANDBOOK</p><h2>Manuel de l’agent</h2><div class="rules"><p><b>01</b> Porter la tenue correspondant au niveau DEFCON annoncé.</p><p><b>02</b> Vérifier chaque composant et chaque texture avant la prise de service.</p><p><b>03</b> Respecter la chaîne de commandement et les procédures du serveur.</p></div></div></section>
+</main>
+<footer><span>U.S.S.S. • NEW DAWN RP V2</span><span>USAGE INTERNE UNIQUEMENT • 2026</span></footer>
+<script>
+const buttons=document.querySelectorAll('.defcon-tabs button'), panels=document.querySelectorAll('.panel');
+buttons.forEach(btn=>btn.addEventListener('click',()=>{buttons.forEach(x=>x.classList.remove('active'));panels.forEach(x=>x.classList.remove('active'));btn.classList.add('active');document.getElementById(btn.dataset.target).classList.add('active')}));
+</script>
+</body></html>
